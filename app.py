@@ -7,7 +7,9 @@ st.write(df.head())
 # Header
 st.header('Streamlit with Plotly and Interactive Checkbox using Vehicle Data')
 st.write("Missing Values in the Dataset:")
+df_clean = df.dropna()
 st.write(df_clean.isnull().sum())
+
 if 'price' in df.columns and 'cylinders' in df.columns:
     # Plotly Express Scatter Plot (Price vs Cylinders)
     fig_scatter = px.scatter(df, x='price', y='cylinders', title="Price vs Cylinders")
