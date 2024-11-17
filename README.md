@@ -23,3 +23,5 @@ Before running the app, ensure you have the following installed on your local ma
    ```bash
    git clone https://github.com/yourusername/vehicle-data-app.git
 
+   URL: http://0.0.0.0:10000
+
